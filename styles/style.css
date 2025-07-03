@@ -1,0 +1,239 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html, body {
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #ffffff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Main container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/* Links */
+a {
+    color: #000000;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #000000;
+}
+
+/* Content sections */
+.content {
+    margin-bottom: 40px;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.external-link {
+    color: #000000;
+    text-decoration: underline;
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+}
+
+.external-link:hover {
+    color: #000000;
+}
+
+.arrow {
+    font-size: 14px;
+}
+
+/* Philosophy section */
+.philosophy ol {
+    padding-left: 20px;
+}
+
+.philosophy li {
+    margin-bottom: 15px;
+    color: #000000;
+    counter-increment: list-counter;
+}
+
+.philosophy li::marker {
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Projects specific styles */
+.project-item {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.project-title {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.project-title:hover {
+    text-decoration: underline;
+}
+
+.project-description {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.project-link {
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.project-link:hover {
+    color: #000000;
+}
+
+/* Experience section */
+.experience-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.job-title {
+    font-weight: bold;
+    color: #000000;
+}
+
+.company-date {
+    color: #000000;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar ul {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .nav-link {
+        font-size: 16px;
+    }
+    
+    .container {
+        padding: 40px 15px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .links {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        gap: 15px;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+} 
