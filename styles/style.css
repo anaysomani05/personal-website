@@ -156,6 +156,12 @@ a:hover {
     margin-bottom: 20px;
 }
 
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .project strong {
     font-size: 1.1em;
     font-weight: bold;
@@ -167,16 +173,15 @@ a:hover {
 }
 
 .github-link {
-    color: #0066cc !important;
+    color: #000000 !important;
     text-decoration: underline !important;
-    font-size: 0.6em;
+    font-size: 1em;
     font-weight: normal;
-    margin-left: 10px;
     transition: color 0.3s ease;
 }
 
 .github-link:hover {
-    color: #004499 !important;
+    color: #000000 !important;
     text-decoration: underline !important;
 }
 
@@ -185,15 +190,15 @@ a:hover {
 }
 
 .more-work-link {
-    color: #0066cc !important;
+    color: #000000 !important;
     text-decoration: underline !important;
-    font-size: inherit;
+    font-size: 1.1em;
     font-weight: normal;
     transition: color 0.3s ease;
 }
 
 .more-work-link:hover {
-    color: #004499 !important;
+    color: #000000 !important;
     text-decoration: underline !important;
 }
 
